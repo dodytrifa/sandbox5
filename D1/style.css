@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.parent {
+  background-color: #4c00ff;
+  padding: 50px;
+  /* width 900px */
+  /* pakai percentage dibanding pixel untuk width */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.child {
+  background-color: aquamarine;
+  height: 400px;
+  /* width: 800px; */
+  /* jika width dibesarkan maka akan terjadi text overflow */
+  /* lalu dibuat overflow hidden tapi bukan solusinya */
+  width: 80%;
+}
