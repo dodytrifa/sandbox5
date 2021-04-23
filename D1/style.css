@@ -25,3 +25,14 @@ body {
   /* lalu dibuat overflow hidden tapi bukan solusinya */
   width: 80%;
 }
+
+.test {
+  border-radius: 25px;
+  border: 10px solid lightgreen;
+  padding: 20px;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: blue;
+}
