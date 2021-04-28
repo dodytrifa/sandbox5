@@ -38,3 +38,8 @@ body {
 .hero p {
   margin-bottom: 3em;
 }
+
+.btn:hover ,
+.btn:focus {
+  opacity: .50;
+}
