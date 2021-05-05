@@ -81,7 +81,7 @@ header {
 }
 
 .nav__item {
-    margin: 1em;
+    margin-right: 1em;
 }
 .nav__link {
     color: #fff;
