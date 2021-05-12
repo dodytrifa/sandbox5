@@ -1,0 +1,55 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: #F3EED9;
+  height: 200px;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.first-section {
+  height: 200px;
+}
+
+.first-title {
+  text-align: center;
+} 
+
+.second-section {
+  background: #222C2A;
+  color: white;
+  height: 200px;
+}
+.third-section {
+  color: white;
+  background: #824936;
+  height: 200px;
+}
