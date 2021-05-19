@@ -4,13 +4,24 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 img {
   max-width: 100%;
 }
 
+h1,h2 {
+  margin-top: 0;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 900;
+}
+
+/* .header {
+  background-color: #F3EED9;
+} */
 .container {
   width: 80%;
   max-width: 1128px;
@@ -22,13 +33,17 @@ img {
   justify-content: space-between;
 }
 
-header {
+.header {
   background: #F3EED9;
-  height: 200px;
+  padding: 200px 0;
+  color: #824936;
+  text-align: center;
 }
 
 .header-text {
-  text-align: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .header-title {
