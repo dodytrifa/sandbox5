@@ -1,11 +1,15 @@
 import React from 'react'
-import {Home} from './pages/Home';
-import {Navbar} from '../components'
+import Home from './pages/Home';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 
 function App() {
   return (
-    <Home></Home>
+    <Router>
+      <Home></Home>
+
+    </Router>
   );
 }
 
