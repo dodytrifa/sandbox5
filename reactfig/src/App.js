@@ -1,13 +1,11 @@
-import './App.css';
+import React from 'react'
+import {Home} from './pages/Home';
+import {Navbar} from '../components'
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="navbar">
-
-      </div>
-      <div className="social"></div>
-    </div>
+    <Home></Home>
   );
 }
 
