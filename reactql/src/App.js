@@ -1,13 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
 import React, {useEffect, useState} from 'react'
-// import axios from 'axios'
+import axios from 'axios'
 
 function App() {
 
   // const API =  "https://prodev-api.ilcs.co.id/ibis_api_external_dev_v2/index.php/SingleBilling/getVessel?keyword=C&port=IDPNJ-PNJD"
   
-  const [data, setData] = useState([])
+  // const [person, setPerson] = useState(null)
+  const [posts, setPosts] = useState([])
 
   // async function fetchData() {
   //   const response = await fetch(API)
@@ -15,25 +16,35 @@ function App() {
   //   setData(await response.json())
   // }
   
-  useEffect(() => {
-    // fetchData()
+  // useEffect( async () => {
+  //   const response = await fetch("https://api.randomuser.me/")
+  //   const data = await response.json()
+  //   const [item] = data.results
+  //   setPerson(item)
+  //   }, [])
 
-    fetch("https://prodev-api.ilcs.co.id/ibis_api_external_dev_v2/index.php/SingleBilling/getVessel?keyword=C&port=IDPNJ-PNJD") 
-      .then(response => response.json())
-      
-    }, [])
+  useEffect(() => {
+    axios.get("https://api.randomuser.me/")
+    .then(res => {
+      console.log(res)
+      setPosts(res.data);
+    })
+    .catch(err => {
+      console.log(err);
+    })
     
-    console.log(response);
-  if(!data) {
+  },[])
     
-    return 'LOADING...'
-  }
   
   return (
     
     <div className="App">
       <div>
-
+        <ul>
+          {
+            posts.map(post => <li key={post.id}>{post.title}</li>)
+          }
+        </ul>
       </div>
     </div>
   );
