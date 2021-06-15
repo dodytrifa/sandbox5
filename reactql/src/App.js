@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import React, {useEffect, useState} from 'react'
+// import axios from 'axios'
 
 function App() {
+
+  // const API =  "https://prodev-api.ilcs.co.id/ibis_api_external_dev_v2/index.php/SingleBilling/getVessel?keyword=C&port=IDPNJ-PNJD"
+  
+  const [data, setData] = useState([])
+
+  // async function fetchData() {
+  //   const response = await fetch(API)
+  //   console.log(response);
+  //   setData(await response.json())
+  // }
+  
+  useEffect(() => {
+    // fetchData()
+
+    fetch("https://prodev-api.ilcs.co.id/ibis_api_external_dev_v2/index.php/SingleBilling/getVessel?keyword=C&port=IDPNJ-PNJD") 
+      .then(response => response.json())
+      
+    }, [])
+    
+    console.log(response);
+  if(!data) {
+    
+    return 'LOADING...'
+  }
+  
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+
+      </div>
     </div>
   );
 }
+
+
+
 
 export default App;
