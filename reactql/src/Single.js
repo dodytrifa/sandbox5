@@ -7,7 +7,6 @@ export default function Single() {
 
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/posts")
-    // axios.get("https://prodev-api.ilcs.co.id/ibis_api_external_dev_v2/index.php/SingleBilling/getVessel?keyword=C&port=IDPNJ-PNJD")
     .then(res => {
       console.log(res)
       setPosts(res.data);
@@ -20,10 +19,14 @@ export default function Single() {
 
   return (
     <div>
-      {posts}
       <ul>
           {
-            posts.map(post => <li key={post.id}>{post.vessel_id}</li>)
+            posts.map(post => {
+             const {id, title} = post
+             return (
+              <li key={id}>{title}</li>
+             )
+            })
           }
         </ul>
     </div>
