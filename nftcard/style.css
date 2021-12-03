@@ -1,3 +1,36 @@
+body {
+  font-family: "Outfit";
+  background-color: hsl(217, 54%, 11%);
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-image {
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid aliceblue;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
