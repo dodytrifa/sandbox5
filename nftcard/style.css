@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 body {
   font-family: "Outfit";
   background-color: hsl(217, 54%, 11%);
@@ -16,6 +18,22 @@ p {
   color: hsl(178, 100%, 50%);
 }
 
+/* color: hsl(215, 32%, 27%); */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid hsl(215, 32%, 27%);
+  margin: 1em 0;
+  padding: 0;
+}
+
+.nft-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nft-image {
   border-radius: 10px;
 }
@@ -25,16 +43,58 @@ p {
   justify-content: center;
   align-items: center;
 }
+.container {
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 25px 25px 25px 25px;
+}
 
 .avatar {
   border-radius: 50%;
   border: 2px solid aliceblue;
 }
 
+.price-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.author {
+  color: hsl(215, 51%, 70%);
+}
+
+.promo-text {
+  color: hsl(215, 51%, 70%);
+}
+
+.caption {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
