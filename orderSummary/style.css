@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -11,15 +13,22 @@
 html,
 body {
   height: 100%;
+  background-color: hsl(225, 100%, 94%);
 }
 
 body {
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 img,
 svg {
   max-width: 100%;
+}
+
+button {
+  font: inherit;
 }
 
 p,
@@ -32,10 +41,56 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.container {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 375px;
+  border-radius: 0.5em;
+  border: 1px solid red;
+  height: 50%;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.hero-img {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+}
+.caption {
+  text-align: center;
+}
+
+.plan {
+  margin-bottom: 1em;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+button {
+  width: 250px;
+  border-radius: 0.5em;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  color: white;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 20%, 43%);
+}
+
+@media (max-width: 375px) {
 }
