@@ -1,12 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* versi pertama */
+/* 
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  /* aspect-ratio: 16 / 9; */
   padding-top: 3em;
   font-family: "Outfit";
   background-color: hsl(217, 54%, 11%);
@@ -50,7 +87,6 @@ p {
 
 .overlay-image {
   opacity: 0;
-  /* width: 90px; */
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -149,4 +185,4 @@ hr {
     align-items: center;
     justify-content: center;
   }
-}
+} */
