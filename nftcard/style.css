@@ -17,6 +17,7 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
+  display: flex;
 }
 
 img,
@@ -32,6 +33,19 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+.container {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 375px;
+  border-radius: 0.5em;
+  border: 1px solid red;
+  height: 50%;
+  background-color: hsl(225, 100%, 98%);
 }
 
 /* versi pertama */
