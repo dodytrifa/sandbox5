@@ -18,6 +18,9 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   display: flex;
+  font-family: "Outfit";
+  background-color: hsl(217, 54%, 11%);
+  line-height: 2;
 }
 
 img,
@@ -35,7 +38,7 @@ h6 {
   overflow-wrap: break-word;
 }
 
-.container {
+.card {
   margin: auto auto;
   display: flex;
   flex-direction: column;
@@ -43,28 +46,13 @@ h6 {
   align-items: center;
   width: 375px;
   border-radius: 0.5em;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 50%;
   background-color: hsl(225, 100%, 98%);
 }
 
-/* versi pertama */
-/* 
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding-top: 3em;
-  font-family: "Outfit";
-  background-color: hsl(217, 54%, 11%);
-}
-
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
   color: hsl(0, 0%, 100%);
 }
 
@@ -79,9 +67,9 @@ p {
 }
 
 .card {
-  margin: auto;
+  /* margin: auto; */
   width: 30%;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
@@ -128,6 +116,9 @@ p {
   border-radius: 20px;
   background-color: hsl(216, 50%, 16%);
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .caption {
@@ -135,6 +126,7 @@ p {
 }
 
 .price-container {
+  margin: 0.2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -187,7 +179,7 @@ hr {
   cursor: pointer;
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   h3 {
     font-size: 24px;
     color: hsl(0, 0%, 100%);
@@ -199,4 +191,4 @@ hr {
     align-items: center;
     justify-content: center;
   }
-} */
+}  */
