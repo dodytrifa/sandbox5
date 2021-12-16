@@ -20,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   display: flex;
   font-family: "Red Hat Display", sans-serif;
+  line-height: 2;
 }
 
 img,
@@ -41,6 +42,18 @@ h6 {
   overflow-wrap: break-word;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+#cancel {
+  text-decoration: none;
+  margin-bottom: 2rem;
+  color: hsl(228, 20%, 43%);
+}
+#cancel:hover {
+  color: black;
+}
 .container {
   margin: auto auto;
   display: flex;
@@ -50,7 +63,6 @@ h6 {
   width: 375px;
   border-radius: 0.5em;
   border: 1px solid red;
-  height: 50%;
   background-color: hsl(225, 100%, 98%);
 }
 
@@ -62,21 +74,28 @@ h6 {
 }
 .caption {
   text-align: center;
+  padding: 0.4em;
+  width: 320px;
 }
 
 .plan {
-  margin-bottom: 1em;
-  padding: 0.4em;
+  margin-bottom: 2rem;
+  padding: 1em;
   border-radius: 0.5em;
   background-color: hsl(225, 100%, 94%);
+  /* background-color: hsl(245, 75%, 52%); */
+  /* background-color: hsl(225, 100%, 98%); */
+  /* background-color: hsl(225, 100%, 94%); */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 250px;
+  width: 320px;
 }
 
 button {
-  width: 250px;
+  width: 320px;
+  height: 40px;
+  margin-bottom: 1rem;
   border-radius: 0.5em;
   background-color: hsl(245, 75%, 52%);
   border: none;
