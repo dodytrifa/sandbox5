@@ -56,10 +56,23 @@ h6 {
 
 .modal-container {
   background-color: red;
-  width: 40%;
+  width: 400px;
   height: 300px;
   left: 50%;
   top: 20%;
   position: absolute;
   transform: translate(-50%);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20px; */
+}
+
+.modal-btn {
+  display: flex;
+  align-items: left;
+
+  justify-content: space-around;
 }
