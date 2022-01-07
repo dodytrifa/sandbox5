@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* Add styles here! */
+
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  padding: 3px 0px;
+}
+
+.max-width-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 680px;
+}
+
+h1 {
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+p {
+  font-size: 1rem;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 56px 0px;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.intro-chunk {
+  max-width: 360px;
+  min-width: 320px;
+  padding-left: 32px;
+}
+
+.colored {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.card {
+  background-color: white;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  min-width: 240px;
+
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  margin-left: -24px;
+  margin-right: 16px;
+  width: fit-content;
+  padding: 8px 24px 8px 24px;
+}
